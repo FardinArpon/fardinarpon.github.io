@@ -25,8 +25,8 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+      url: ${{ steps.deployment.outputs.http://13.228.37.255 }}
+    runs-on: self-hosted
     steps:
       - name: Checkout
         uses: actions/checkout@v3
