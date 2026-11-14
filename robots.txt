@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fardinarpon.me/sitemap.xml
