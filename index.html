@@ -1,883 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- KEEP your existing Google Site Verification meta tag here (copy it from your current index.html) -->
+<title>Fardin Amin Arpon | Software Test Engineer | Product Assurance | AI/ML Researcher</title>
+<meta name="author" content="Fardin Amin Arpon">
+<meta name="description" content="Portfolio of Fardin Amin Arpon: ISTQB-certified software test and product assurance engineer, 5+ years in EdTech and FinTech, IEEE-published AI/ML researcher.">
+<meta name="keywords" content="Fardin Amin Arpon, Fardin Arpon, Software Engineer in Test, SQA Engineer, QA Automation, Selenium, ISTQB, AIML Researcher, fardinarpon.me">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#18232f;--muted:#5a6876;--bg:#f5f7fa;--card:#fff;--line:#dde3ea;--side:#06101b;--accent:#149ddd;--accent-d:#0b6f9c;--w:288px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cursor{animation:none!important}}
+body{margin:0;font-family:'Open Sans',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+h1,h2,h3,h4{font-family:Poppins,sans-serif;line-height:1.25;margin:0}
+a{color:var(--accent-d)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+img{max-width:100%}
 
-  <!-- Google Site Verification -->
-  <meta name="google-site-verification" content="U4kIYfQDg9iyT01IXGo_8UYgArVTYBZA2cCEhtiYL9A">
+/* sidebar */
+#side{position:fixed;inset:0 auto 0 0;width:var(--w);background:var(--side);color:#cfd8e1;display:flex;flex-direction:column;align-items:center;padding:28px 18px 16px;overflow-y:auto;z-index:20}
+#side .pic{width:118px;height:118px;border-radius:50%;border:6px solid #1f2a38;object-fit:cover}
+#side h1{color:#fff;font-size:22px;margin:16px 0 14px;text-align:center}
+.soc{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.soc a{width:38px;height:38px;border-radius:50%;background:#1f2a38;color:#fff;display:grid;place-items:center;font:600 13px Poppins;text-decoration:none}
+.soc a:hover{background:var(--accent)}
+nav{width:100%;margin:26px 0 auto}
+nav a{display:block;padding:11px 14px;color:#9fb0c1;text-decoration:none;border-radius:6px;font-size:15px}
+nav a:hover,nav a.on{color:#fff;background:#111e2c;box-shadow:inset 3px 0 0 var(--accent)}
+#side small{color:#cfd8e1;margin-top:18px}
+#menu{display:none}
 
-  <!-- Title -->
-  <title>Fardin Amin Arpon | Software Engineer | Software Quality Assurance Engineer</title>
+/* layout */
+main{margin-left:var(--w)}
+section{padding:72px 56px}
+.wrap{max-width:900px}
+h2{font-size:28px;margin-bottom:6px}
+h2+p.lead{color:var(--muted);margin:0 0 30px}
+h3{font-size:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:22px 24px}
 
-  <!-- Primary SEO Meta Tags -->
-  <meta name="description" content="Official portfolio of Fardin Amin Arpon, SQA & Software Automation Engineer. Explore projects, IEEE research publications, ISTQB/CSM certifications, and SQA expertise.">
-  <meta name="keywords" content="Fardin Amin Arpon, Fardin Arpon, Software Engineer, SQA Engineer, Software Automation Engineer, Software Tester, DevOps Engineer, AIML Engineer, AIML Researcher, Researcher, Author, fardinarpon.me, Portfolio">
-  <meta name="author" content="Fardin Amin Arpon">
-  <meta name="robots" content="index, follow">
+/* hero */
+#hero{min-height:100vh;display:flex;align-items:center;padding:0 56px;position:relative;color:#fff;
+ background:linear-gradient(90deg,rgba(6,16,27,.78),rgba(6,16,27,.25)),url("Fardin%20pic.jpeg") center/cover #0d1b2a}
+#hero h2{font-size:clamp(40px,7vw,68px);font-weight:700}
+#hero p{font:400 clamp(20px,3vw,30px) Poppins;margin:8px 0 22px;min-height:1.4em}
+.cursor{display:inline-block;width:2px;height:1em;background:#fff;vertical-align:-3px;margin-left:3px;animation:b 1s steps(1) infinite}
+@keyframes b{50%{opacity:0}}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 22px;border-radius:6px;font:500 15px Poppins;text-decoration:none;background:var(--accent);color:#fff}
+.btn.alt{background:transparent;border:2px solid #fff}
+.btn:hover{background:var(--accent-d)}
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+/* about */
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:26px}
+.facts div{border-left:4px solid var(--accent);padding:4px 14px}
+.facts b{display:block;font:600 22px Poppins}
+.facts span{color:var(--muted);font-size:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.tags span{background:#e4f3fa;color:#0b4f6c;padding:4px 12px;border-radius:99px;font-size:14px}
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-  <!-- Bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+/* timeline */
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:28px}
+.job{position:relative;margin-bottom:26px}
+.job::before{content:"";position:absolute;left:-37px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+.job .when{color:var(--muted);font-size:14px;margin:2px 0 8px}
+.job ul,.card ul{margin:0;padding-left:20px}
+.job li,.card li{margin-bottom:4px}
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <meta name="google-site-verification" content="8gDDSiOhVB0faIU5ifonUqgm2XK265IV2f3tddA_28c" />
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+/* grids */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.grid h3{margin-bottom:10px}
+.plist{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.plist a{display:block;padding:14px 18px;background:var(--card);border:1px solid var(--line);border-radius:8px;text-decoration:none;color:var(--ink);font-weight:600}
+.plist a small{display:block;font-weight:400;color:var(--muted)}
+.plist a:hover{border-color:var(--accent)}
+.pub{margin-bottom:14px}
+.pub p{margin:4px 0 0;color:var(--muted);font-size:15px}
+.quote{margin:0 0 16px}
+.quote p{margin:0 0 14px}
+.quote footer{display:flex;gap:14px;align-items:center}
+.quote img{width:54px;height:54px;border-radius:50%;object-fit:cover}
+.quote footer span{color:var(--muted);font-size:14px;display:block}
+.contact a.row{display:block;padding:6px 0;font-size:17px}
+
+@media(max-width:900px){
+ #side{transform:translateX(-100%);transition:transform .25s}
+ #side.open{transform:none}
+ main{margin-left:0}
+ section,#hero{padding-left:22px;padding-right:22px}
+ #menu{display:grid;place-items:center;position:fixed;top:12px;right:12px;z-index:30;width:44px;height:44px;border:0;border-radius:50%;background:var(--side);color:#fff;font-size:20px}
+}
+</style>
 </head>
-
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="profile.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Fardin Amin Arpon</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://www.linkedin.com/in/fardinarpon/" target="_blank" class="linkedin"><i
-              class="bx bxl-linkedin"></i></a>
-          <a href="https://www.researchgate.net/profile/Fardin-Amin-Arpon" target="_blank" class="researchgate"><i
-              class="bi bi-envelope"></i></a>
-          <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRqgkNhDCxGmZKGJBLBKCCDnmcdxPRvQmqHZVJDSGjrGBDLGCtVMTGWTJTrGfRBHjcpcrGG"
-            class="skype" target="_blank" ><i class="bi bi-envelope" ></i></a>
-        </div>
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Skills</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Projects</span></a>
-          </li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Tools &
-                Frameworks</span></a></li>
-          <li><a href="#recommand" class="nav-link scrollto"><i class="bx bx-server"></i>
-              <span>Recommandations</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in" width="500px">
-      <h1>Hi..!</h1>
-      <p><span class="typed" data-typed-items="I am Fardin Amin Arpon, An SQA and Test Automation Engineer"
-          width="500px"></span></p>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills">
-      <div class="container">
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p class="=fst-italic">I'm Fardin Amin Arpon, Software Engineer (QA, Test, Product Assurance) with over 4+ years of experience in the Software Firm, Telco, and Mobile Financial Service (MFS) industry, holding ISTQB®, CSM and various vendor certifications. 
-            <p> >I have worked on multiple products and projects, showcasing my versatility as a professional. Additionally, I am a Level One seller on Fiverr, where I have maintained a 4.9* rating and received 50+ positive reviews from customers, particularly in the EdTech and FinTech and Services domains.</p
-           <p>I leverage my technical skills to meet organizational goals and drive optimal performance. I have a proven track record of successfully delivering projects and providing essential solutions across different business domains.</p>
-<p>My key Services area: #Software Testing, #Product Quality Assurance, #Product Management, #Scrum and Agile meeting management, #Web & Mobile Application Testing, #API testing, #Manual Testing, #Performance and Load Testing, #DevOps and Release Management, #AWS cloud infrastructure.</p>
-          <p>I am Passionate, Organized, Self-motivated, Detail-Oriented, Forward thinker and Agile practitioner </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="profile.jpg" class="img-fluid" alt="FardinAminArpon">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-
-            <h3>MANUAL TESTING SKILLS</h3>
-            <div class="row">
-              <div class="col-lg-12">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i>Experienced in review and analyze system specifications</li>
-                  <li><i class="bi bi-chevron-right"></i>Experienced in evaluating features according to the
-                    requirements</li>
-                  <li><i class="bi bi-chevron-right"></i>Experienced in writing effective test plan and test strategies
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i>Experienced in writing clear, concise and comprehensive test
-                    cases</li>
-                  <li><i class="bi bi-chevron-right"></i>Experienced in executing test cases and analyse result</li>
-                  <li><i class="bi bi-chevron-right"></i>Having good observation skills to detect bug</li>
-                  <li><i class="bi bi-chevron-right"></i>Ability to perform a complete quality check and inspect the
-                    smallests errors and mistakes</li>
-                  <li><i class="bi bi-chevron-right"></i>Ability to do bug advocacy for obtaining a qualitiful product
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i>Having experience to plan tasks and team leading capability
-                  </li>
-                </ul>
-              </div>
-
-
-              <h3>AUTOMATION TESTING SKILLS</h3>
-              <div class="row">
-                <div class="col-lg-12">
-                  <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>UI Testing:</strong> <span>Selenium, Appium and JS
-                        based library like cypress, puppeteer and codeceptjs</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>API Testing:</strong> <span>Rest Assured, Spock,
-                        Axios, Postman, Newman</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Reporting Tools:</strong> <span>reportportal.io,
-                        Allure, mochawesome</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Testing Frameworks:</strong> <span>TestNG, JUnit,
-                        Mocha, Chai, Cucumber</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Load Testing:</strong> <span>Jmeter,
-                        Blazemeter</span></li>
-                  </ul>
-                </div>
-
-
-              </div>
-              <h3>TECHNICAL SKILLS</h3>
-              <div class="row">
-                <div class="col-lg-12">
-                  <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Security Testing:</strong> <span>vulnerability
-                        exploitation by SQL Injection, XSS Hooking, Dictionary attack etc</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Penetration Testing Tools:</strong> <span>Burpsuit,
-                        Maltego, Zap, KnockPy, Nmapper, beEF, Weevely</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Programming Language:</strong> <span>Java,
-                        JavaScript, Python</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Web Development Frameworks:</strong> <span>Spring
-                        Boot, Express, Django, ASP.NET MVC5</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Web Design Technologies:</strong> <span>HTML5, CSS5,
-                        Bootstrap5, JavaScript, Wordpress </span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Database:</strong> <span>MySQL, MSSQL Server,
-                        PostgreSQL</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Development Platform:</strong> <span>IntellIJ,
-                        Netbeans, Visual Studio, VS Code, Pycharm, Jupyter</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>DevOps Tools:</strong> <span>Jenkins, Docker</span>
-                    </li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Source Code Management:</strong> <span>Github,
-                        Gitlab</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Operating Systems:</strong> <span>Windows, Kali
-                        Linux, Ubuntu</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Project Management Tools:</strong> <span>Jira,
-                        Confluence</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Concepts:</strong> <span>Sound knowledge on OOP,
-                        SDLC, STLC, UML, SDD, MVC, MVT</span></li>
-
-                  </ul>
-                </div>
-
-
-              </div>
-              <h3>SOFT SKILLS</h3>
-              <p">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i>Have expertise in requirement analysis and root cause analysis
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i>Have a strong presentation skill with the ability of
-                    multi-tasking
-                    in multi-layers of engineering</li>
-                  <li><i class="bi bi-chevron-right"></i>Have a technical understanding of dynamic & complex software
-                    systems</li>
-                  <li><i class="bi bi-chevron-right"></i>Have a proper understanding of the financial products and the
-                    banking system architecture</li>
-                  <li><i class="bi bi-chevron-right"></i>Excellent organizational, interpersonal, verbal, and written
-                    communication skills.</li>
-                  <li><i class="bi bi-chevron-right"></i>Ability to work well in a fast-paced environment under
-                    deadlines
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i>Ability to successfully execute many complex tasks
-                    simultaneously
-                    </p>
-                  <li><i class="bi bi-chevron-right"></i>Have strong leading capabilities and team management</li>
-                  <li><i class="bi bi-chevron-right"></i>Ability to work as a team member, as well as independently</li>
-                  <li><i class="bi bi-chevron-right"></i>Organized, Detail-Oriented, Forward thinker and Agile
-                    practitioner
-                  </li>
-                </ul>
-                </p>
-            </div>
-          </div>
-
-        </div>
-    </section>
-    <!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Professional Experience & Projects</h2>
-          
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <!-- <h3 class="resume-title">Professional Experience</h3> -->
-            <!-- <div class="resume-item pb-0">
-              <h3 class="resume-title">Professional Experience</h3> 
-            </div> -->
-            
-            <!-- <div class="resume-item">
-              <h4>MSc in CSE</h4>
-              <h5>2017 - 2019</h5>
-              <p><em>Jahangirnagar University</em></p>
-            </div> -->
-            <div class="resume-item">
-              <h4>BSc in CSE, Green University</h4>
-              <h5>2020</h5>
-              <p><em></em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Full Stack Software QA & Test Automation,<br> Road To SDET</h4>
-              <h5>2021</h5>
-              <p><em> <a href="https://drive.google.com/file/d/1kc_-LpxBfugg9380bYSl6NpFHWuBDyvQ/view">A+,One of the top 5 students</a> </em></p>
-            </div>
-            <div class="resume-item">
-              <h4>English language -[Mentors']</h4>
-              <h5>2008</h5>
-              <p><em> <a href="https://drive.google.com/drive/folders/14EFAE2Fe-5j_A7F3qe7sKJmz6J1ZGGuh">[87% mark]-Complete 6 months course on Foundation English Grammar Writing & Speaking</a></em></p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <!-- <h3 class="resume-title">Professional Experience</h3> -->
-            <div class="resume-item">
-              <h4> <b> Software Engineer - I [Quality & Product Assurance]</b></h4>
-              <h5>March, 2021 - Present</h5>
-              <!--           <h3><em>Teton Pvt Ltd. </em></h3>
-          <h6><b>Teton Pvt Ltd. is an US-based and ISO-9001:2015 Certified Tech. Company.</b> It provides financial software & IT based tech. solutions. 
-           <a href="https://tetonelectronics.com/">Teton Pvt Ltd.</a> </h6> -->
-              <h4>Responsibilities</h4>
-              <ul>
-                <li>Writing Automation Scripts, Code Review, Performance Testing</li>
-                <li>Verify test cases, develop test plan and test automation strategy</li>
-                <li>RnD and Knowledge sharing session with teammates</li>
-                <li>Requirement analysis and Bug advocacy</li>
-                <li>Team Coordination</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>SQA Engineer</h4>
-              <h5>January, 2021 - March, 2021</h5>
-              <!--           <h3><em>Programming Hero</em></h3>
-          <p>Programming Hero, a Canada-Bangladesh-Japan joint venture is a leading provider of MFS and remittances processing solutions. SureCash, the mobile financial platform of Progoti Systems Ltd., an open payment network in partnership with 5 local banks.<br/>
-            https://surecash.net</p> -->
-              <h4>Responsibilities</h4>
-              <ul>
-                <li>Develop and update test cases, test plan, test strategy and testing documentation.</li>
-                <li>Performing Acceptance Testing, Feature Testing, API testing and Regression Testing on Web portal,
-                  USSD and Mobile Application </li>
-                <li>Taking participation in requirement analysis and validating feasibility by Agile/Scrum development
-                  process</li>
-                <li>Load testing and bottlenect analysis</li>
-                <li>Log file analysis to detect root cause </li>
-                <li>Executing DB Query for financial report verification and DB level testing to follow-up entire
-                  application.</li>
-                <li>Knowledge sharing session with teammates</li>
-                <li>Providing technical Support (if needed) to inter department colleagues</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h3>Software-QA Engineer</h3>
-              <h5>January, 2021 - April, 2021 [Intern]</h5>
-              <h4><em>Developer Experience Hub</em></h4>
-              <p></p>
-              <h5>Responsibilities</h5>
-              <ul>
-                <li>Create and Execute Manual + Automation Test Cases/Scenarios.</li>
-                <li>Conduct Functional, Integration, Smoke, Sanity, Regression testing</li>
-                <li>Perform Cross-Browser and Cross-Platform Testing.</li>
-                <li>Perform Automation Testing using Selenium WebDriver.</li>
-                <li>Perform Performance-Testing using JMeter.</li>
-                <li>Perform MobileApp-Testing using Appium.</li>
-                <li>Create Test Cases and requirement Documents based on business requirements.</li>
-                <li>Database, UI/UX, Interface, API and UAT testing.</li>
-                <li>Maintain Test Cases version-wise based on build version and update the test case status.</li>
-                <li>Analyze test results and create test reports subsequently communicating reports to the project lead
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-
-
-
-      </div>
-    </section><!-- End Resume Section -->
-
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Project</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h5 class="resume-title"><a
-                href="https://github.com/FardinArpon/Appium_Android_MobileApp">Appium_Android_MobileApp</a></h5>
-
-            <h4 class="resume-title"><a
-                href="https://github.com/FardinArpon/TestNG-POM-Selenium.">TestNG-POM-Selenium</a></h4>
-
-            <h4 class="resume-title"><a href="https://github.com/FardinArpon/Selenium_Junit_demoqa.com">Web
-                Automation-JUnit-demoqa.com</a></h4>
-
-            <h3 class="resume-title"><a
-                href="https://github.com/FardinArpon/Web_Portal_Test_Selenium">Student-Portal-Test-Automation</a></h3>
-
-            <h3 class="resume-title"><a
-                href="https://github.com/FardinArpon/Cucumber_BDD_Selenium">Cucumber-BDD-Selenium</a></h3>
-
-            <h3 class="resume-title"><a href="https://github.com/FardinArpon/API_Postman_Newman">API-Automation with
-                Postman & Newman</a></h3>
-
-            <h3 class="resume-title"><a href="https://github.com/FardinArpon/Manual_Testing">Manual Testing</a></h3>
-
-            <h3 class="resume-title"><a href="https://github.com/FardinArpon/Linux-Operation">Linux-Operation</a></h3>
-
-
-            <h3 class="resume-title"><a
-                href="https://github.com/FardinArpon/Rest-Assured_CoustomerAPI">Rest-Assured_CoustomerAPI Testing</a>
-            </h3>
-
-            <h3 class="resume-title"><a
-                href="https://github.com/FardinArpon/Netflix_Automation_Selenium">Netflix_Automation_TestNG POM &
-                Cucumber-BDD-Selenium</a></h3>
-
-            <h3 class="resume-title"><a href="https://fardinarpon.github.io/Single-webpage.github.io">Single
-                Page-Website-Template</a></h3>
-
-          </div>
-
-
-
-
-          <!-- ======= Skills Section ======= -->
-
-          <section id="skills" class="skills section-bg">
-            <div class="container">
-
-              <div class="section-title">
-                <h2>Skills at a glance</h2>
-                <p>Here I am representing some of my technical skills in chart </p>
-              </div>
-
-              <div class="row skills-content">
-
-                <div class="col-lg-4" data-aos="fade-up">
-
-                  <div class="progress">
-                    <span class="skill">Manual Testing <i class="val">95%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                        aria-valuemax="100">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="progress">
-                    <span class="skill">UI Automation Testing <i class="val">95%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                        aria-valuemax="100">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="progress">
-                    <span class="skill">API Testing <i class="val">95%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                        aria-valuemax="100">
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-
-                  <div class="progress">
-                    <span class="skill">Java<i class="val">75%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                        aria-valuemax="100">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="progress">
-                    <span class="skill">JavaScript<i class="val">70%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                        aria-valuemax="100">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="progress">
-                    <span class="skill">Python <i class="val">70%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                        aria-valuemax="100">
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-
-                  <div class="progress">
-                    <span class="skill">Security Testing<i class="val">60%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="progress">
-                    <span class="skill">DevOps<i class="val">70%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                        aria-valuemax="100">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="progress">
-                    <span class="skill">Load Testing<i class="val">95%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                        aria-valuemax="100">
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-          </section>
-
-          <!-- End Skills Section -->
-
-
-          <!-- ======= Portfolio Section =======  -->
-          <section id="portfolio" class="portfolio section-bg">
-            <div class="container">
-
-              <div class="section-title">
-                <h2>Tools and Framework</h2>
-
-              </div>
-
-              <div class="row" data-aos="fade-up">
-                <div class="col-lg-12 d-flex justify-content-center">
-                  <ul id="portfolio-flters">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-ui-automation">UI Automation</li>
-                    <li data-filter=".filter-api-automation">API Automation</li>
-                    <li data-filter=".filter-app-automation">APP Automation</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-ui-automation">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/selenium.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                      <a href="assets/img/portfolio/selenium.jpg" data-gallery="portfolioGallery"
-                        class="portfolio-lightbox" title="UI Automaiton using Selenium"><i class="bx bx-plus"></i></a>
-                      <a href="https://github.com/salmansrabon/selenium-web-automation-gradle" title="More Details"><i
-                          class="bx bx-link"></i></a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-ui-automation">
-                  <div class="portfolio-wrap">
-                    <p align="left"> <a href="https://developer.android.com" target="_blank"> <img
-                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg"
-                          alt="android" width="40" height="40" /> </a> <a href="https://aws.amazon.com" target="_blank">
-                        <img
-                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                          alt="aws" width="40" height="40" /> </a> <a href="https://azure.microsoft.com/en-in/"
-                        target="_blank"> <img
-                          src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure"
-                          width="40" height="40" /> </a> <a href="https://getbootstrap.com" target="_blank"> <img
-                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
-                          alt="bootstrap" width="40" height="40" /> </a> <a href="https://www.cprogramming.com/"
-                        target="_blank"> <img
-                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c"
-                          width="40" height="40" /> </a> <a href="https://www.w3schools.com/css/" target="_blank"> <img
-                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-                          alt="css3" width="40" height="40" /> </a> <a href="https://www.cypress.io" target="_blank">
-                        <img
-                          src="https://raw.githubusercontent.com/simple-icons/simple-icons/6e46ec1fc23b60c8fd0d2f2ff46db82e16dbd75f/icons/cypress.svg"
-                          alt="cypress" width="40" height="40" /> </a> <a href="https://www.docker.com/"
-                        target="_blank"> <img
-                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
-                          alt="docker" width="40" height="40" /> </a> <a href="https://expressjs.com" target="_blank">
-                        <img
-                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
-                          alt="express" width="40" height="40" /> </a> <a href="https://git-scm.com/" target="_blank">
-                        <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40"
-                          height="40" /> </a> <a href="https://www.w3.org/html/" target="_blank"> <img
-                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-                          alt="html5" width="40" height="40" /> </a>
-                      <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank"> <img
-                          src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg"
-                          alt="illustrator" width="40" height="40" /> </a>
-                      <a href="https://www.java.com" target="_blank"> <img
-                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
-                          alt="java" width="40" height="40" /> </a> <a
-                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img
-                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                          alt="javascript" width="40" height="40" /> </a> <a href="https://www.jenkins.io"
-                        target="_blank"> <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg"
-                          alt="jenkins" width="40" height="40" /> </a> <a href="https://kubernetes.io" target="_blank">
-                        <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes"
-                          width="40" height="40" /> </a> <a href="https://www.linux.org/" target="_blank"> <img
-                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
-                          alt="linux" width="40" height="40" /> </a> <a href="https://www.mongodb.com/" target="_blank">
-                        <img
-                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
-                          alt="mongodb" width="40" height="40" /> </a> <a href="https://www.mysql.com/" target="_blank">
-                        <img
-                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-                          alt="mysql" width="40" height="40" /> </a> <a href="https://nodejs.org" target="_blank"> <img
-                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-                          alt="nodejs" width="40" height="40" /> </a>
-                      <!--  <a href="https://www.photoshop.com/en" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> 
-<a href="https://www.php.net" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://www.selenium.dev" target="_blank"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://zapier.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg" alt="zapier" width="40" height="40"/> </a>  -->
-                      <code><img height="40" src="https://user-images.githubusercontent.com/48891202/135019836-4eb0b434-0b0d-42b0-b359-96077cbb71bf.png"></code>
-                      <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bash/bash.png"></code><code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/maven/maven.png"></code>
-                      <code><img height="40" src="https://user-images.githubusercontent.com/48891202/135020000-067afc86-f3e9-48ad-b9a3-2c234fa0eb9f.png"></code>
-                    </p>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-ui-automation">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/puppeteer.png" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                      <a href="assets/img/portfolio/puppeteer.png" data-gallery="portfolioGallery"
-                        class="portfolio-lightbox" title="UI Automation by Puppeteer"><i class="bx bx-plus"></i></a>
-                      <a href="https://github.com/salmansrabon/automationpractice-playwright-demo"
-                        title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-ui-automation">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/cucumber.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                      <a href="assets/img/portfolio/cucumber.jpg" data-gallery="portfolioGallery"
-                        class="portfolio-lightbox" title="Cucumbr with selenium"><i class="bx bx-plus"></i></a>
-                      <a href="https://github.com/salmansrabon/java-cucumber-selenium-demo" title="More Details"><i
-                          class="bx bx-link"></i></a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app-automation">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/appium.png" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                      <a href="assets/img/portfolio/appium.png" data-gallery="portfolioGallery"
-                        class="portfolio-lightbox" title="Android app automation"><i class="bx bx-plus"></i></a>
-                      <a href="https://github.com/salmansrabon/android-appium-chaldal-app" title="More Details"><i
-                          class="bx bx-link"></i></a>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-api-automation">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/rest-assured.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                      <a href="assets/img/portfolio/rest-assured.jpg" data-gallery="portfolioGallery"
-                        class="portfolio-lightbox" title="API Automation by Rest rest-assured"><i
-                          class="bx bx-plus"></i></a>
-                      <a href="https://github.com/salmansrabon/rest-assured-api-testing-demo" title="More Details"><i
-                          class="bx bx-link"></i></a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-api-automation">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/axioss.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/axioss.png" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="API Automation by Axios"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/salmansrabon/axios-api-test-demo" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div> -->
-
-              </div>
-
-            </div>
-          </section><!-- End Portfolio Section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <!-- ======= Testimonials Section ======= -->
-
-          <section id="recommand" class="testimonials section-bg">
-            <div class="container">
-
-              <div class="section-title">
-                <h2>Recommandation</h2>
-              </div>
-
-              <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-                <div class="swiper-wrapper">
-
-                  <div class="">
-                    <div class="testimonial-item" data-aos="fade-up">
-                      <p>
-                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Fardin is a very talented test automation engineer. Technically he is very sound and quick
-                        learner. Also he is very hard working and passionate to his desired goal. I recommend him as an
-                        awesome test automation engineer.
-                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                      </p>
-                      <a href="https://www.linkedin.com/in/noor-yeaser-khan-53b83797/"><img
-                          src="assets/img/SalmanRahman.png" class="testimonial-img" alt="SalmanRahman"></a>
-                      <h3><a href="https://www.linkedin.com/in/kmsalmanrahman/">Salman Rahman</a>
-                      </h3>
-                      <h4><a href="https://www.linkedin.com/in/kmsalmanrahman/">Sr. Software Engineer in Test, Team
-                          Lead, Spring Rain Pvt Ltd || Software Automation Professional</a></h4>
-                    </div>
-                  </div>
-
-                  <!-- End testimonial item -->
-
-                  <div class="">
-                    <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-                      <p>
-                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Arpon is a very talented, hard working, enthusiast automation and dev ops engineer. He is very
-                        sound and quick learner and motivated to learn new stuffs everyday. I recommend apron as a very
-                        good automation engineer for any organization.
-                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                      </p>
-                      <a href="https://www.linkedin.com/in/mahidul-hasan-95678137/"><img src="assets/img/Sulaiman.jpg"
-                          class="testimonial-img" alt="Mahidul Hasan"></a>
-                      <h3><a href="https://www.linkedin.com/in/sulaimanhaque/"> sulaiman Haque</a></h3>
-                      <h4><a href="https://www.linkedin.com/in/sulaimanhaque/"> Sr. Software Engineer in Test (7+ Years)
-                          InfoSec Enthusiast </a> </h4>
-                    </div>
-
-                  </div>
-
-                  <!-- End testimonial item -->
-
-                  <div class="">
-                    <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-                      <p>
-                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Fardin Amin Arpon is technically sound team member with a detailed oriented personality in the
-                        field of Quality Assurance. He is energetic and genuinely interested in improving work processes
-                        and product quality. He always like to learn new techniques and try to improve his work. He is
-                        very hard working and honest. He is excellent in Testing. He keeps himself updated with new
-                        developments in the field of managing Software Quality and brings his knowledge to reflect in
-                        his work. I wish him all the best in his upcoming commitments.
-                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                      </p>
-                      <a href="https://www.linkedin.com/in/sabiul-islam-rased-092a1a12b/"><img
-                          src="assets/img/khalidsir.jpg" class="testimonial-img" alt="Khalid M.Javaid"></a>
-                      <h3><a href="https://www.linkedin.com/in/khalid-m-javaid-128a1b17/">Khalid M. Javaid </a></h3>
-                      <h4><a href="https://www.linkedin.com/in/khalid-m-javaid-128a1b17/"> Test Architect/Software
-                          Quality Assurance in Healthcare/Hospital Domain at Veraio Inc</a></h4>
-                    </div>
-
-                  </div>
-
-                  <!-- End testimonial item -->
-
-                  <!-- </div>
-      <div class="swiper-pagination"></div>
-    </div>
-
+<button id="menu" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+
+<aside id="side">
+ <img class="pic" src="profile.jpg" alt="Fardin Amin Arpon">
+ <h1>Fardin Amin Arpon</h1>
+ <div class="soc">
+  <a href="https://www.linkedin.com/in/fardinarpon/" aria-label="LinkedIn">in</a>
+  <a href="https://github.com/FardinArpon" aria-label="GitHub">Git</a>
+  <a href="https://www.researchgate.net/profile/Fardin-Amin-Arpon" aria-label="ResearchGate">RG</a>
+  <a href="mailto:fardinaminarpon@gmail.com" aria-label="Email">@</a>
+ </div>
+ <nav>
+  <a href="#hero" class="on">Home</a>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#research">Research</a>
+  <a href="#education">Education</a>
+  <a href="#recommend">Recommendations</a>
+  <a href="#contact">Contact</a>
+ </nav>
+ <small>&copy; <b id="yr">2026</b> Fardin Amin Arpon</small>
+</aside>
+
+<main>
+<section id="hero">
+ <div>
+  <h2>Hi..!</h2>
+  <p>I am Fardin Amin Arpon<span class="cursor"></span></p>
+  <div class="cta">
+   <a class="btn" href="#contact">Get in touch</a>
+   <a class="btn alt" href="Fardin's%20Resume..pdf">Download resume</a>
   </div>
-</section> -->
-                  <!-- End Testimonials Section -->
+ </div>
+</section>
 
+<section id="about"><div class="wrap">
+ <h2>About me</h2>
+ <p class="lead">Software Test &amp; Product Assurance Engineer, ISTQB&reg; and CSM certified</p>
+ <p>I have more than 5 years of experience testing web and mobile products across EdTech, FinTech and service domains. I currently work as a QA Automation Test Engineer at Connex Pay, and before that I spent three years in product assurance at Programming Hero, working directly with clients, developers and management.</p>
+ <p>Alongside testing, I mentor aspiring QA engineers (100+ students so far) and publish research in machine learning. I am now applying for an MSc in Computer Science to go deeper into AI/ML.</p>
+ <div class="facts">
+  <div><b>5+ years</b><span>in software testing and product assurance</span></div>
+  <div><b>100+</b><span>students mentored at Road To SDET</span></div>
+  <div><b>30+</b><span>freelance QA projects, 4.9 stars on Fiverr</span></div>
+  <div><b>88%</b><span>ISTQB&reg; Foundation Level 4.0 score</span></div>
+ </div>
+ <h3 style="margin-top:30px">What I work on</h3>
+ <div class="tags">
+  <span>Software testing</span><span>Test automation</span><span>API testing</span><span>Web &amp; mobile apps</span>
+  <span>Performance testing</span><span>Scrum &amp; Agile</span><span>Product management</span><span>Machine learning research</span>
+ </div>
+</div></section>
 
+<section id="experience"><div class="wrap">
+ <h2>Experience</h2>
+ <p class="lead">Most recent first</p>
+ <div class="tl">
+  <div class="job">
+   <h3>QA Automation Test Engineer – I, Connex Pay</h3>
+   <p class="when">June 2025 – Present</p>
+   <ul>
+    <li>Create and execute test cases and scenarios; automate UI tests with Selenium.</li>
+    <li>Test APIs with Postman, check interfaces against Figma designs, and run UAT.</li>
+    <li>Analyze results, write test reports, and run regression testing for each release.</li>
+   </ul>
+  </div>
+  <div class="job">
+   <h3>Product Assurance Engineer – L2, Programming Hero</h3>
+   <p class="when">May 2022 – June 2025</p>
+   <ul>
+    <li>Worked on the Neptune and Phitron products across several web and mobile apps.</li>
+    <li>Managed sprint backlogs and ran Scrum; coordinated the development and QA teams.</li>
+    <li>Reviewed Android and iOS app reports; tracked bugs and test cases in JIRA, versioned by build.</li>
+    <li>Handled Helpdesk and Freshdesk issues, feature requests and student feedback.</li>
+    <li>Met clients directly, wrote meeting minutes and sprint documentation, and joined weekly business and management reviews.</li>
+   </ul>
+  </div>
+  <div class="job">
+   <h3>Software Engineer in Test, Teton Pvt. Ltd.</h3>
+   <p class="when">March 2021 – May 2022</p>
+   <ul>
+    <li>Wrote and executed test plans for Newsroom, Benemoy and MedSer.</li>
+    <li>Tested Android and iOS apps, including the Teton Smart Scale and Teton Toy Train.</li>
+    <li>Ran functional, regression, smoke, sanity, UI and performance tests; built functional automation.</li>
+   </ul>
+  </div>
+  <div class="job">
+   <h3>Mentor &amp; QA Product Analyst, Road To SDET (part-time)</h3>
+   <p class="when">October 2021 – October 2023</p>
+   <ul>
+    <li>Mentored 100+ students on assignments and testing projects; taught manual testing classes.</li>
+    <li>Ran live sessions and workshops, product and business analysis, and career coaching.</li>
+   </ul>
+  </div>
+  <div class="job">
+   <h3>Freelance Software Tester, Fiverr</h3>
+   <p class="when">2021 – 2022</p>
+   <ul><li>Level One seller: completed 30+ software testing projects with a 4.9-star average review.</li></ul>
+  </div>
+ </div>
+</div></section>
 
+<section id="skills"><div class="wrap">
+ <h2>Skills &amp; tools</h2>
+ <p class="lead">What I use day to day</p>
+ <div class="grid">
+  <div class="card"><h3>Testing</h3><div class="tags"><span>Smoke &amp; sanity</span><span>Integration</span><span>System</span><span>UAT</span><span>Regression</span><span>Usability</span><span>UI/UX</span><span>Functional &amp; non-functional</span><span>Test strategy &amp; reports</span></div></div>
+  <div class="card"><h3>Automation</h3><div class="tags"><span>Selenium</span><span>JUnit</span><span>TestNG</span><span>Postman &amp; Newman</span><span>Figma</span><span>JMeter</span></div></div>
+  <div class="card"><h3>Languages &amp; data</h3><div class="tags"><span>Java</span><span>Python</span><span>MySQL</span><span>Eclipse</span><span>IntelliJ</span><span>Visual Studio</span></div></div>
+  <div class="card"><h3>DevOps &amp; cloud</h3><div class="tags"><span>Git, GitHub, GitLab</span><span>CI/CD</span><span>Nginx</span><span>AWS (EC2, S3, RDS)</span><span>Linux</span><span>Windows</span></div></div>
+  <div class="card"><h3>Project management</h3><div class="tags"><span>Agile</span><span>Scrum</span><span>Kanban</span><span>Jira</span><span>Trello</span><span>Active Collab</span><span>YouTrack</span><span>SDLC &amp; STLC</span><span>Estimation</span></div></div>
+  <div class="card"><h3>Ways of working</h3><ul><li>Turning requirement specs into clear test cases</li><li>Keeping sprints on schedule and tracking change requests</li><li>Mentoring, workshops and public speaking</li></ul></div>
+ </div>
+</div></section>
 
+<section id="projects"><div class="wrap">
+ <h2>Projects</h2>
+ <p class="lead">Open-source test automation work on GitHub</p>
+ <ul class="plist">
+  <li><a href="https://github.com/FardinArpon/Appium_Android_MobileApp">Appium Android app<small>Mobile automation</small></a></li>
+  <li><a href="https://github.com/FardinArpon/TestNG-POM-Selenium">TestNG + POM + Selenium<small>Web automation</small></a></li>
+  <li><a href="https://github.com/FardinArpon/Selenium_Junit_demoqa.com">JUnit web automation (demoqa.com)<small>Web automation</small></a></li>
+  <li><a href="https://github.com/FardinArpon/Web_Portal_Test_Selenium">Student portal test automation<small>Selenium</small></a></li>
+  <li><a href="https://github.com/FardinArpon/Cucumber_BDD_Selenium">Cucumber BDD + Selenium<small>BDD framework</small></a></li>
+  <li><a href="https://github.com/FardinArpon/API_Postman_Newman">API automation<small>Postman &amp; Newman</small></a></li>
+  <li><a href="https://github.com/FardinArpon/Rest-Assured_CoustomerAPI">Customer API testing<small>Rest Assured</small></a></li>
+  <li><a href="https://github.com/FardinArpon/Netflix_Automation_Selenium">Netflix automation<small>TestNG POM &amp; Cucumber BDD</small></a></li>
+  <li><a href="https://github.com/FardinArpon/Manual_Testing">Manual testing<small>Test plans and bug reports</small></a></li>
+  <li><a href="https://github.com/FardinArpon/Linux-Operation">Linux operations<small>Command-line practice</small></a></li>
+ </ul>
+</div></section>
 
+<section id="research"><div class="wrap">
+ <h2>Research &amp; publications</h2>
+ <p class="lead">Machine learning, healthcare and software engineering</p>
+ <div class="card pub"><h3>Role of Robotics in Development of Business Organizational/Human Resource Management System</h3><p>Scopus Q2 journal paper (second author), Kexue Tongbao / Chinese Science Bulletin.</p></div>
+ <div class="card pub"><h3>A Genetic Algorithm-Based Feature Selection Technique to Predict Diabetes in Machine Learning</h3><p>IEEE conference paper (second author), presented at ICMLAS 2025, the International Conference on Machine Learning and Autonomous Systems.</p></div>
+ <div class="card pub"><h3>Machine Learning-Based Regression Modelling for Serum Creatinine Prediction in Chronic Kidney Disease Assessment</h3><p>First-author manuscript, my first solo paper. Currently being submitted to a journal.</p></div>
+ <div class="card pub"><h3>Computer Vision Based Recognition of Medicine Names and Its Information</h3><p>BSc thesis at Green University of Bangladesh, graded A+ (92%).</p></div>
+ <p><a href="https://www.researchgate.net/profile/Fardin-Amin-Arpon">See all work on ResearchGate</a></p>
+</div></section>
 
+<section id="education"><div class="wrap">
+ <h2>Education &amp; certifications</h2>
+ <p class="lead">&nbsp;</p>
+ <div class="grid">
+  <div class="card"><h3>Education</h3><ul>
+   <li><b>BSc in Computer Science &amp; Engineering</b>, Green University of Bangladesh, 2020 – 2024</li>
+   <li>IELTS 5.5; second attempt in preparation</li>
+  </ul></div>
+  <div class="card"><h3>Certifications</h3><ul>
+   <li>ISTQB&reg; Certified Tester, Foundation Level 4.0 (88%)</li>
+   <li>Advanced Research Career in Machine Learning &amp; XAI, Nural Research Lab</li>
+   <li>Software Quality Assurance &amp; Test Automation, Road To SDET (60+ hours)</li>
+   <li>Software Testing + Jira + Agile on a live app, Udemy (Rahul Shetty)</li>
+   <li>Software Test Automation, Test Automation University</li>
+   <li>Web Design and Development, SEEP (A+)</li>
+  </ul></div>
+  <div class="card"><h3>Leadership</h3><ul>
+   <li>IEEE Information Secretary and STI conference volunteer, Green University student branch, 2020 – 2023</li>
+   <li>Three or more public speaking sessions and a seminar at IEEE and the university</li>
+  </ul></div>
+ </div>
+</div></section>
 
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
+<section id="recommend"><div class="wrap">
+ <h2>Recommendations</h2>
+ <p class="lead">What colleagues and mentors say</p>
+ <blockquote class="card quote"><p>Fardin is a very talented test automation engineer. Technically he is very sound and a quick learner. He is also hard working and passionate about his goals.</p>
+  <footer><img src="assets/img/SalmanRahman.png" alt="Salman Rahman"><div><a href="https://www.linkedin.com/in/kmsalmanrahman/"><b>Salman Rahman</b></a><span>Sr. Software Engineer in Test, Team Lead, Spring Rain Pvt Ltd</span></div></footer></blockquote>
+ <blockquote class="card quote"><p>Arpon is a very talented, hard working and enthusiastic automation and DevOps engineer, and a quick learner who is motivated to learn something new every day.</p>
+  <footer><img src="assets/img/Sulaiman.jpg" alt="Sulaiman Haque"><div><a href="https://www.linkedin.com/in/sulaimanhaque/"><b>Sulaiman Haque</b></a><span>Sr. Software Engineer in Test (7+ years)</span></div></footer></blockquote>
+ <blockquote class="card quote"><p>Fardin is a technically sound team member with a detail-oriented approach to quality assurance. He is energetic, honest, hard working, and keeps up with new developments in managing software quality.</p>
+  <footer><img src="assets/img/khalidsir.jpg" alt="Khalid M. Javaid"><div><a href="https://www.linkedin.com/in/khalid-m-javaid-128a1b17/"><b>Khalid M. Javaid</b></a><span>Test Architect, Software QA in Healthcare, Veraio Inc</span></div></footer></blockquote>
+</div></section>
 
-            </div>
-          </section>
+<section id="contact"><div class="wrap contact">
+ <h2>Contact</h2>
+ <p class="lead">Open to QA automation roles and MSc research opportunities</p>
+ <div class="card">
+  <a class="row" href="mailto:fardinaminarpon@gmail.com">fardinaminarpon@gmail.com</a>
+  <a class="row" href="tel:+8801902179445">+880 1902 179445</a>
+  <a class="row" href="https://www.linkedin.com/in/fardinarpon/">linkedin.com/in/fardinarpon</a>
+  <a class="row" href="https://github.com/FardinArpon">github.com/FardinArpon</a>
+  <a class="row" href="https://www.researchgate.net/profile/Fardin-Amin-Arpon">ResearchGate profile</a>
+ </div>
+</div></section>
+</main>
 
-          <!-- End Testimonials Section -->
-
-          <!-- ======= Contact Section ======= -->
-
-          <section id="contact" class="contact">
-            <div class="container">
-
-              <div class="section-title">
-                <h2>Contact</h2>
-              </div>
-
-              <div class="row" data-aos="fade-in">
-
-                <div class="col-lg-5 d-flex align-items-stretch">
-                  <div class="info">
-                    <div class="address">
-                      <i class="bx bxl-linkedin"></i>
-                      <h4><a href="https://www.linkedin.com/in/fardinarpon/">linkedin</a></h4>
-                      <a href="https://www.linkedin.com/in/fardinarpon/">
-                        <p>linkedin.com/in/fardinarpon</p>
-                      </a>
-                    </div>
-                    <div class="clock">
-                      <i class="bx bx-user"></i>
-                      <h4><a href="https://github.com/FardinArpon">GitHub</a></h4>
-                      <a href="https://github.com/FardinArpon">
-                        <p>github.com/FardinArpon</p>
-                      </a>
-                    </div>
-
-                    <div class="email">
-                      <i class="bi bi-envelope"></i>
-                      <h4><a
-                          href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDXXrkgtmwJmXWXzQtfDVbtkJnwDbxzdVPwTGKxpfFlmDFJSxdgSTkDbbTFRqPNsLFFSrxB">Email:</a>
-                      </h4>
-                      <a
-                        href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDXXrkgtmwJmXWXzQtfDVbtkJnwDbxzdVPwTGKxpfFlmDFJSxdgSTkDbbTFRqPNsLFFSrxB">
-                        <p>fardinaminarpon@gmail.com</p>
-                      </a>
-                    </div>
-
-                    <div class="phone">
-                      <i class="bi bi-phone"></i>
-                      <h4>Call:</h4>
-                      <p>+8801902179445</p>
-                    </div>
-
-                    <!-- <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.045987309318!2d90.41554201481584!3d23.781376684574145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c79e4e363fc5%3A0x615871800addbfd0!2sSpring%20Rain%20Private%20Ltd.!5e0!3m2!1sen!2sbd!4v1624691146491!5m2!1sen!2sbd" width="100%" height="Auto" style="border:0;" allowfullscreen="" loading="lazy">
-                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
-                  </div>
-
-                </div>
-
-                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                    <div class="row">
-                      <div class="form-group col-md-6">
-                        <label for="name">Your Name</label>
-                        <input type="text" name="name" class="form-control" id="name" required>
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="name">Your Email</label>
-                        <input type="email" class="form-control" name="email" id="email" required>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="name">Subject</label>
-                      <input type="text" class="form-control" name="subject" id="subject" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="name">Message</label>
-                      <textarea class="form-control" name="message" rows="10" required></textarea>
-                    </div>
-                    <div class="my-3">
-                      <div class="loading">Loading</div>
-                      <div class="error-message"></div>
-                      <div class="sent-message">Your message has been sent. Thank you!</div>
-                    </div>
-                    <div class="text-center"><button type="submit">Send Message</button></div>
-                  </form>
-                </div>
-
-              </div>
-
-            </div>
-          </section>
-
-          <footer id="footer">
-            <div class="container">
-              <div class="copyright">
-                &copy; Copyright <strong><span>Fardin Amin Arpon</span></strong>
-              </div>
-              <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-
-              </div>
-            </div>
-          </footer>
-          <!-- End  Footer -->
-
-          <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-              class="bi bi-arrow-up-short"></i></a>
-
-          <!-- Vendor JS Files -->
-          <script src="assets/vendor/aos/aos.js"></script>
-          <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-          <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-          <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-          <script src="assets/vendor/php-email-form/validate.js"></script>
-          <script src="assets/vendor/purecounter/purecounter.js"></script>
-          <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-          <script src="assets/vendor/typed.js/typed.min.js"></script>
-          <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
-          <!-- Template Main JS File -->
-          <script src="assets/js/main.js"></script>
-
+<script>
+(function(){
+ // typing effect in the hero
+ var el=document.querySelector('#hero p'),cur=el.querySelector('.cursor'),
+     text='I am Fardin Amin Arpon',i=0;
+ if(!matchMedia('(prefers-reduced-motion:reduce)').matches){
+  el.firstChild.textContent='';
+  (function t(){el.firstChild.textContent=text.slice(0,++i);if(i<text.length)setTimeout(t,70)})();
+ }
+ // mobile menu
+ var side=document.getElementById('side'),btn=document.getElementById('menu');
+ btn.onclick=function(){var o=side.classList.toggle('open');btn.setAttribute('aria-expanded',o)};
+ side.querySelectorAll('nav a').forEach(function(a){a.onclick=function(){side.classList.remove('open')}});
+ // highlight current section
+ var links=[].slice.call(document.querySelectorAll('nav a'));
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(e.isIntersecting){links.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+ document.querySelectorAll('main section').forEach(function(s){io.observe(s)});
+ document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
 </body>
-
 </html>
