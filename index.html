@@ -83,8 +83,10 @@ h3{font-size:18px}
 .plist a:hover{border-color:var(--accent)}
 .pub{margin-bottom:14px}
 .pub p{margin:4px 0 0;color:var(--muted);font-size:15px}
-.quote{margin:0 0 16px}
-.quote p{margin:0 0 14px}
+.rgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.quote{margin:0;display:flex;flex-direction:column;justify-content:space-between;gap:14px}
+.ini{width:54px;height:54px;border-radius:50%;background:#e4f3fa;color:#0b4f6c;display:grid;place-items:center;font:600 18px Poppins;flex:none}
+.quote p{margin:0}
 .quote footer{display:flex;gap:14px;align-items:center}
 .quote img{width:54px;height:54px;border-radius:50%;object-fit:cover}
 .quote footer span{color:var(--muted);font-size:14px;display:block}
@@ -119,9 +121,9 @@ h3{font-size:18px}
   <a href="#about">About</a>
   <a href="#experience">Experience</a>
   <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#research">Research</a>
   <a href="#education">Education</a>
+  <a href="#research">Research</a>
+  <a href="#projects">Projects</a>
   <a href="#recommend">Recommendations</a>
   <a href="#contact">Contact</a>
  </nav>
@@ -220,6 +222,42 @@ h3{font-size:18px}
  </div>
 </div></section>
 
+<section id="education"><div class="wrap">
+ <h2>Education &amp; certifications</h2>
+ <p class="lead">Degree, courses, and volunteer leadership</p>
+ <div class="grid">
+  <div class="card"><h3>Education</h3><ul>
+   <li><b>BSc in Computer Science &amp; Engineering</b>, Green University of Bangladesh, 2020 – 2024</li>
+   <li>IELTS: 6.5 overall</li>
+  </ul></div>
+  <div class="card"><h3>Certifications</h3><ul>
+   <li>ISTQB&reg; Certified Tester, Foundation Level 4.0 (88%) &ndash; <a href="https://zertdb.isqi.org/en/download/index/token/Z6jQj%24_-pvhY_x8CiXSt">license</a></li>
+   <li>Advanced Research Career in Machine Learning &amp; XAI, Nural Research Lab &ndash; <a href="https://drive.google.com/file/d/1TiKbCjX3QIuKC4pQaylph343rZyHsbxk/view?usp=sharing">certificate</a></li>
+   <li>Software Testing + Jira + Agile on a live project, Udemy &ndash; <a href="https://www.udemy.com/certificate/UC-587026cb-18fe-41d2-b53f-46ff10fc6911/">certificate</a></li>
+   <li>Software Quality Assurance &amp; Test Automation, <a href="https://roadtosdet.com/">Road To SDET</a> (60+ hours, 4+ months) &ndash; <a href="https://drive.google.com/file/d/1kc_-LpxBfugg9380bYSl6NpFHWuBDyvQ/view">certificate</a></li>
+   <li>Software Test &amp; Automation, Test Automation University &ndash; <a href="https://testautomationu.applitools.com/certificate/?id=8b82908e">certificate</a></li>
+   <li>Web Design and Development, SEEP (A+), 6-month professional course &ndash; <a href="https://drive.google.com/drive/folders/1WcC4ODszf1pebkCmSz6X3IalQFXMgccf">certificate</a></li>
+   <li>Business Export and Import for Entrepreneurs, Huzaifa Enterprise &ndash; <a href="https://drive.google.com/drive/folders/1dqR5cRLaFKAFBBqBdtoZOUVoVW15Ts5T?usp=sharing">certificate</a></li>
+  </ul></div>
+  <div class="card"><h3>Leadership</h3><ul>
+   <li>IEEE Information Secretary and STI conference volunteer, Green University student branch, 2020 &ndash; 2023 &ndash; <a href="https://drive.google.com/drive/folders/1h75pYxEDEEh4EKDE0Htt2iPrRojoVXmP">achievements</a></li>
+   <li>Conducted 3+ public speaking engagements and a seminar at IEEE and the university &ndash; <a href="https://docs.google.com/presentation/d/1DzQJyM34mCi7AimM_KUcRdFB2uu8vPav/edit?usp=sharing&amp;ouid=103604021882752564947&amp;rtpof=true&amp;sd=true">presentation</a></li>
+   <li>Team management (around 5 members); Level One freelancer on <a href="https://www.fiverr.com/fardin_amin/">Fiverr</a>, specialising in software testing and project management</li>
+   <li>Managed technical sessions and supported teachers for IEEE STI conferences &ndash; <a href="https://drive.google.com/drive/folders/1h75pYxEDEEh4EKDE0Htt2iPrRojoVXmP">award</a></li>
+  </ul></div>
+ </div>
+</div></section>
+
+<section id="research"><div class="wrap">
+ <h2>Research &amp; publications</h2>
+ <p class="lead">Machine learning, healthcare and software engineering</p>
+ <div class="card pub"><h3>Role of Robotics in Development of Business Organizational/Human Resource Management System</h3><p>Scopus Q2 journal paper (second author), Kexue Tongbao / Chinese Science Bulletin. <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=sxTiQAgAAAAJ&amp;citation_for_view=sxTiQAgAAAAJ:u5HHmVD_uO8C">View on Google Scholar</a></p></div>
+ <div class="card pub"><h3>A Genetic Algorithm-Based Feature Selection Technique to Predict Diabetes in Machine Learning</h3><p>IEEE conference paper (second author), presented at ICMLAS 2025, the International Conference on Machine Learning and Autonomous Systems. <a href="https://ieeexplore.ieee.org/document/10968923">View on IEEE Xplore</a></p></div>
+ <div class="card pub"><h3>Machine Learning-Based Regression Modelling for Serum Creatinine Prediction in Chronic Kidney Disease Assessment</h3><p>First-author manuscript, my first solo paper. Currently being submitted to a journal.</p></div>
+ <div class="card pub"><h3>Computer Vision Based Recognition of Medicine Names and Its Information</h3><p>BSc thesis at Green University of Bangladesh, graded A+ (92%). <a href="https://drive.google.com/file/d/1iXYuQ_Cpot2C2DLBaq-FHezIvfCCO4bg/view?usp=sharing">Thesis book</a> &middot; <a href="https://docs.google.com/presentation/d/14fgHIgPDpeEFIgGwxf0w85EGHZPVzPt6/edit?usp=sharing&amp;ouid=103604021882752564947&amp;rtpof=true&amp;sd=true">Presentation slides</a></p></div>
+ <p><a href="https://scholar.google.com/citations?user=sxTiQAgAAAAJ&amp;hl=en">Google Scholar</a> &middot; <a href="https://www.researchgate.net/profile/Fardin-Amin-Arpon">ResearchGate</a></p>
+</div></section>
+
 <section id="projects"><div class="wrap">
  <h2>Projects</h2>
  <p class="lead">Open-source test automation work on GitHub</p>
@@ -237,49 +275,23 @@ h3{font-size:18px}
  </ul>
 </div></section>
 
-<section id="research"><div class="wrap">
- <h2>Research &amp; publications</h2>
- <p class="lead">Machine learning, healthcare and software engineering</p>
- <div class="card pub"><h3>Role of Robotics in Development of Business Organizational/Human Resource Management System</h3><p>Scopus Q2 journal paper (second author), Kexue Tongbao / Chinese Science Bulletin. <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=sxTiQAgAAAAJ&amp;citation_for_view=sxTiQAgAAAAJ:u5HHmVD_uO8C">View on Google Scholar</a></p></div>
- <div class="card pub"><h3>A Genetic Algorithm-Based Feature Selection Technique to Predict Diabetes in Machine Learning</h3><p>IEEE conference paper (second author), presented at ICMLAS 2025, the International Conference on Machine Learning and Autonomous Systems. <a href="https://ieeexplore.ieee.org/document/10968923">View on IEEE Xplore</a></p></div>
- <div class="card pub"><h3>Machine Learning-Based Regression Modelling for Serum Creatinine Prediction in Chronic Kidney Disease Assessment</h3><p>First-author manuscript, my first solo paper. Currently being submitted to a journal.</p></div>
- <div class="card pub"><h3>Computer Vision Based Recognition of Medicine Names and Its Information</h3><p>BSc thesis at Green University of Bangladesh, graded A+ (92%). <a href="https://drive.google.com/file/d/1iXYuQ_Cpot2C2DLBaq-FHezIvfCCO4bg/view?usp=sharing">Thesis book</a> &middot; <a href="https://docs.google.com/presentation/d/14fgHIgPDpeEFIgGwxf0w85EGHZPVzPt6/edit?usp=sharing&amp;ouid=103604021882752564947&amp;rtpof=true&amp;sd=true">Presentation slides</a></p></div>
- <p><a href="https://scholar.google.com/citations?user=sxTiQAgAAAAJ&amp;hl=en">Google Scholar</a> &middot; <a href="https://www.researchgate.net/profile/Fardin-Amin-Arpon">ResearchGate</a></p>
-</div></section>
-
-<section id="education"><div class="wrap">
- <h2>Education &amp; certifications</h2>
- <p class="lead">&nbsp;</p>
- <div class="grid">
-  <div class="card"><h3>Education</h3><ul>
-   <li><b>BSc in Computer Science &amp; Engineering</b>, Green University of Bangladesh, 2020 – 2024</li>
-   <li>IELTS: 6.5 overall</li>
-  </ul></div>
-  <div class="card"><h3>Certifications</h3><ul>
-   <li>ISTQB&reg; Certified Tester, Foundation Level 4.0 (88%) &ndash; <a href="https://zertdb.isqi.org/en/download/index/token/Z6jQj%24_-pvhY_x8CiXSt">license</a></li>
-   <li>Advanced Research Career in Machine Learning &amp; XAI, Nural Research Lab &ndash; <a href="https://drive.google.com/file/d/1TiKbCjX3QIuKC4pQaylph343rZyHsbxk/view?usp=sharing">certificate</a></li>
-   <li>Software Testing + Jira + Agile on a live project, Udemy &ndash; <a href="https://www.udemy.com/certificate/UC-587026cb-18fe-41d2-b53f-46ff10fc6911/">certificate</a></li>
-   <li>Software Quality Assurance &amp; Test Automation, <a href="https://roadtosdet.com/">Road To SDET</a> (60+ hours, 4+ months) &ndash; <a href="https://drive.google.com/file/d/1kc_-LpxBfugg9380bYSl6NpFHWuBDyvQ/view">certificate</a></li>
-   <li>Software Test &amp; Automation, Test Automation University &ndash; <a href="https://testautomationu.applitools.com/certificate/?id=8b82908e">certificate</a></li>
-   <li>Web Design and Development, SEEP (A+), 6-month professional course &ndash; <a href="https://drive.google.com/drive/folders/1WcC4ODszf1pebkCmSz6X3IalQFXMgccf">certificate</a></li>
-   <li>Business Export and Import for Entrepreneurs, Huzaifa Enterprise &ndash; <a href="https://drive.google.com/drive/folders/1dqR5cRLaFKAFBBqBdtoZOUVoVW15Ts5T?usp=sharing">certificate</a></li>
-  </ul></div>
-  <div class="card"><h3>Leadership</h3><ul>
-   <li>IEEE Information Secretary and STI conference volunteer, Green University student branch, 2020 – 2023</li>
-   <li>Three or more public speaking sessions and a seminar at IEEE and the university</li>
-  </ul></div>
- </div>
-</div></section>
-
 <section id="recommend"><div class="wrap">
  <h2>Recommendations</h2>
- <p class="lead">What colleagues and mentors say</p>
- <blockquote class="card quote"><p>Fardin is a very talented test automation engineer. Technically he is very sound and a quick learner. He is also hard working and passionate about his goals.</p>
-  <footer><img src="assets/img/SalmanRahman.png" alt="Salman Rahman"><div><a href="https://www.linkedin.com/in/kmsalmanrahman/"><b>Salman Rahman</b></a><span>Sr. Software Engineer in Test, Team Lead, Spring Rain Pvt Ltd</span></div></footer></blockquote>
- <blockquote class="card quote"><p>Arpon is a very talented, hard working and enthusiastic automation and DevOps engineer, and a quick learner who is motivated to learn something new every day.</p>
-  <footer><img src="assets/img/Sulaiman.jpg" alt="Sulaiman Haque"><div><a href="https://www.linkedin.com/in/sulaimanhaque/"><b>Sulaiman Haque</b></a><span>Sr. Software Engineer in Test (7+ years)</span></div></footer></blockquote>
- <blockquote class="card quote"><p>Fardin is a technically sound team member with a detail-oriented approach to quality assurance. He is energetic, honest, hard working, and keeps up with new developments in managing software quality.</p>
-  <footer><img src="assets/img/khalidsir.jpg" alt="Khalid M. Javaid"><div><a href="https://www.linkedin.com/in/khalid-m-javaid-128a1b17/"><b>Khalid M. Javaid</b></a><span>Test Architect, Software QA in Healthcare, Veraio Inc</span></div></footer></blockquote>
+ <p class="lead">What colleagues, seniors and mentors say on LinkedIn</p>
+ <div class="rgrid">
+  <blockquote class="card quote"><p>Fardin is a very talented test automation engineer. Technically he is very sound and quick learner. Also he is very hard working and passionate to his desired goal. I recommend him as an awesome test automation engineer.</p>
+   <footer><img src="assets/img/SalmanRahman.png" alt="Salman Rahman"><div><a href="https://www.linkedin.com/in/kmsalmanrahman/"><b>Salman Rahman</b></a><span>Sr. Software Engineer in Test, Team Lead, Spring Rain Pvt Ltd</span></div></footer></blockquote>
+  <blockquote class="card quote"><p>Fardin Amin Arpon is technically sound team member with a detailed oriented personality in the field of Quality Assurance. He is energetic and genuinely interested in improving work processes and product quality. He always like to learn new techniques and try to improve his work. He is very hard working and honest. He is excellent in Testing. He keeps himself updated with new developments in the field of managing Software Quality and brings his knowledge to reflect in his work. I wish him all the best in his upcoming commitments.</p>
+   <footer><img src="assets/img/khalidsir.jpg" alt="Khalid M. Javaid"><div><a href="https://www.linkedin.com/in/khalid-m-javaid-128a1b17/"><b>Khalid M. Javaid</b></a><span>Test Architect, SQA Management, Healthcare domain, Veraio Inc</span></div></footer></blockquote>
+  <blockquote class="card quote"><p>Arpon is a very talented, hard working, enthusiast automation and dev ops engineer. He is very sound and quick learner and motivated to learn new stuffs everyday. I recommend apron as a very good automation engineer for any organization.</p>
+   <footer><img src="assets/img/Sulaiman.jpg" alt="Sulaiman Haque"><div><a href="https://www.linkedin.com/in/sulaimanhaque/"><b>Sulaiman Haque</b></a><span>Sr. Software Engineer in Test (7+ years)</span></div></footer></blockquote>
+  <blockquote class="card quote"><p>He is hungry to learn new technology. he is capable to learn anything easily. And he has good communication skills.</p>
+   <footer><span class="ini" aria-hidden="true">NH</span><div><b>Nazmul Hoque</b><span>SQA Engineer, ISTQB Certified, Manual &amp; Automation Testing</span></div></footer></blockquote>
+  <blockquote class="card quote"><p>A wonderful person who is involved in continuous learning and excelling. His software testing and project management skills are quite remarkable. I wish him good luck in his career.</p>
+   <footer><span class="ini" aria-hidden="true">PA</span><div><b>Pollab Ahmed</b><span>Software QA Engineer (ISTQB&reg; CTFL), Test Automation &amp; API Specialist</span></div></footer></blockquote>
+  <blockquote class="card quote"><p>He is passionate and very active in his task. He has good communication skills and fast learner.</p>
+   <footer><span class="ini" aria-hidden="true">AS</span><div><b>Asik Syed</b><span>Software Automation Engineer at Road To SDET</span></div></footer></blockquote>
+ </div>
 </div></section>
 
 <section id="contact"><div class="wrap contact">
